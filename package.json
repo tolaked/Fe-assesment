@@ -16,6 +16,7 @@
     "axios": "^0.19.2",
     "customize-cra": "^1.0.0",
     "font-awesome": "^4.7.0",
+    "formik": "^2.1.5",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-router-dom": "^5.2.0",
