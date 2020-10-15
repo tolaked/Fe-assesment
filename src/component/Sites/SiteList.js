@@ -8,6 +8,7 @@ const SiteList = (props) => {
   const [tanks, setTanks] = useState([]);
   const [tankInformation, setTankInformation] = useState({});
   const [view, setView] = useState(false);
+  const [loading, setLoading] = useState(false);
   //   const [buttonText,setButton]
   const token = localStorage.getItem("token");
   const fetchSites = useCallback(async () => {
@@ -49,6 +50,7 @@ const SiteList = (props) => {
   };
 
   const tankInfo = async (site_id, tank_id) => {
+    setLoading(true);
     await Axios.get(
       `https://cors-anywhere.herokuapp.com/https://fcs.concept-nova.com/api/v1/sites/${site_id}/${tank_id}?token=${token}`
     )
@@ -56,9 +58,11 @@ const SiteList = (props) => {
         console.log(data);
         setView(!view);
         setTankInformation(data.message);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err.response);
+        setLoading(false);
       });
   };
 
@@ -101,6 +105,7 @@ const SiteList = (props) => {
                 {view && Object.keys(tankInformation).length > 0 ? (
                   <>
                     <h5>Tank Details</h5>
+                    <p>{loading ? "Loading details" : ""}</p>
                     <p>Capacity: {tankInformation.tank_capacity}</p>
                     <p>Volume: {tankInformation.tank_current_volume}</p>
                   </>
