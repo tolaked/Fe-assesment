@@ -1,0 +1,422 @@
+body {
+  font-family: "OrkneyRegular";
+  font-weight: normal;
+  font-style: normal;
+  background: #fafafa;
+}
+
+.form-surround::-webkit-scrollbar {
+  display: none;
+}
+.form-surround {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.activation-text {
+  font-size: 12px;
+  color: green;
+}
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  background: white;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 9px;
+}
+.reset-create {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-text {
+  font-size: 14px;
+}
+.reset-create p {
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.form-control {
+  width: 180px !important;
+  border: 2px solid #e2e2e2 !important;
+  height: 34px !important;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 10px;
+}
+.image-section {
+  width: 72%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.country {
+  height: 34px;
+  border: 2px solid #e2e2e2;
+  outline: none;
+  border-radius: 9px;
+}
+
+#pass {
+  margin-bottom: 10px;
+}
+
+.form-section {
+  overflow: hidden;
+  width: 35%;
+  height: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form-section form {
+  padding-top: 10px;
+}
+
+.form-surround {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+label {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.input {
+  border: 2px solid #e2e2e2;
+  outline: none;
+  border-radius: 9px;
+  height: 28px;
+}
+.firstname-input {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lastname-input {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.email-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+.select-input {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 10px;
+}
+.country-phone {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+
+.country-input {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 10px;
+}
+.password-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.custom-icon {
+  position: absolute;
+  left: auto;
+  right: 20px;
+  top: 28px;
+}
+
+.newpassword-input {
+  border: 2px solid #e2e2e2;
+  outline: none;
+  border-radius: 9px;
+  height: 30px;
+  width: 100%;
+}
+
+.register-button {
+  width: 100%;
+  background: #0092e0 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  outline: none;
+  height: 38px;
+  border: 1px solid #0092e0;
+  margin-top: 20px;
+  color: white;
+}
+
+.resetpassword-button {
+  width: 100% !important;
+  background: #0092e0 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  outline: none;
+  height: 38px;
+  border: 2px solid #0092e0;
+  margin-top: 20px;
+  color: white;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* .accept .agree {
+    font-size: 12px;
+  } */
+
+#accountType {
+  height: 34px;
+}
+
+.facebook {
+  width: 48% !important;
+  height: 32px !important;
+  background: #0092e0 0% 0% no-repeat padding-box !important;
+  border-radius: 9px !important;
+  outline: none !important;
+  border: 1px solid #0092e0 !important;
+  color: white !important;
+}
+.intro-text {
+  font-size: 12px;
+  /* width: 100%; */
+  margin-bottom: 30px;
+}
+.signup-with {
+  font-size: 12px;
+}
+.paragraph {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.google {
+  width: 27%;
+  height: 36px;
+  background: #ff2600 0% 0% no-repeat padding-box !important;
+  border-radius: 9px !important;
+  outline: none !important;
+  border: 1px solid #ff2600 !important;
+  color: white;
+}
+.google span {
+  color: white;
+}
+
+.terms .accept span {
+  font-size: 12px;
+}
+
+.terms .link {
+  font-size: 12px;
+}
+
+.terms a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0092e0;
+}
+
+.text-header {
+  display: flex;
+  justify-content: center;
+  color: #ff2600;
+  margin-top: -15px;
+  /* margin-bottom: 5px; */
+}
+
+@media screen and (max-width: 800px) {
+  .text-header {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .image-section {
+    display: none;
+  }
+
+  .login-image-section {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #accountType {
+    height: 40px;
+  }
+  .signup-with {
+    font-size: 16px;
+  }
+  .form-section {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 850px;
+  }
+  label {
+    font-size: 16px;
+  }
+
+  .input {
+    font-size: 18px;
+    height: 38px;
+  }
+  .intro-text {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .fields {
+    margin-bottom: 30px;
+  }
+
+  .register-button {
+    height: 55px;
+    margin-top: -5px;
+    font-size: 18px;
+  }
+  .country {
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .custom-icon {
+    top: 34px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .terms .accept span {
+    font-size: 18px;
+  }
+
+  .terms a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .check {
+    font-size: 18px;
+  }
+  .google {
+    height: 45px;
+    font-size: 18px;
+  }
+  .facebook {
+    height: 45px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-section {
+    width: 85%;
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  #login-section {
+    height: 400px;
+  }
+
+  .name-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .country-phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstname-input,
+  .lastname-input,
+  .input {
+    width: 100%;
+  }
+  .firstname-input {
+    margin-bottom: 30px;
+  }
+
+  .phone {
+    width: 100%;
+  }
+  .country-input,
+  .select-input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .fields {
+    margin-bottom: 30px;
+  }
+  .register-button {
+    height: 35px;
+    width: 100%;
+    margin-top: -5px;
+    font-size: 14px;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .terms .accept span {
+    font-size: 12px;
+    width: 100%;
+  }
+  .terms a {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #0092e0;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .intro-text {
+    font-size: 14px;
+  }
+}
